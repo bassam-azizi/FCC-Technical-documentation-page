@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: content-box;
 }
-body {
-  height: 100%;
+html {
+  min-height: 100%;
   background: rgba(200, 207, 218, 1);
   background: linear-gradient(
     -45deg,
@@ -124,7 +124,9 @@ body {
   font-weight: 600;
   letter-spacing: 0.01em;
   font-size: 28px;
-  /* text-align: center; */
+  /* width: 600px; */
+  margin: 0 0 15px;
+  text-align: center;
   /* padding: 1.2em; */
   color: #010101;
 }
