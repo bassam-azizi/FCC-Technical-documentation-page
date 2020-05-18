@@ -8,10 +8,10 @@
   </head>
   <body>
     <nav id="nav-bar">
-      <header>JS Documentation</header>
+      <header><h1>JS Documentation</h1></header>
       <ul>
         <li>
-          <a href="#Introduction" class="nav-link">Introduction</a>
+          <a href="#Introduction" class="nav-link current">Introduction </a>
         </li>
         <li>
           <a href="#What_you_should_know" class="nav-link"
@@ -98,14 +98,17 @@
       <section class="main-section" id="What_you_should_know">
         <header>What you should know</header>
         <p>This guide assumes you have the following basic background:</p>
-        <li>
-          A general understanding of the Internet and the World Wide Web (WWW).
-        </li>
-        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-        <li>
-          Some programming experience. If you are new to programming, try one of
-          the tutorials linked on the main page about JavaScript.
-        </li>
+        <ul>
+          <li>
+            A general understanding of the Internet and the World Wide Web
+            (WWW).
+          </li>
+          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+          <li>
+            Some programming experience. If you are new to programming, try one
+            of the tutorials linked on the main page about JavaScript.
+          </li>
+        </ul>
       </section>
       <section class="main-section" id="JavaScript_and_Java">
         <header>JavaScript and Java</header>
@@ -146,8 +149,10 @@
           >function greetMe(yourName) { alert("Hello " + yourName); }
           greetMe("World");</code
         >
-        Select the code in the pad and hit Ctrl+R to watch it unfold in your
-        browser!
+        <p>
+          Select the code in the pad and hit Ctrl+R to watch it unfold in your
+          browser!
+        </p>
       </section>
       <section class="main-section" id="Variables">
         <header>Variables</header>
@@ -350,7 +355,8 @@
         <header>While statement</header>
         <p>
           A while statement executes its statements as long as a specified
-          condition evaluates to true. A while statement looks as follows:
+          condition evaluates to true.<br />
+          A while statement looks as follows:
         </p>
         <code>while (condition) statement</code>
         <p>
@@ -365,12 +371,13 @@
         </p>
         <p>
           To execute multiple statements, use a block statement ({ ... }) to
-          group those statements.
+          group those statements.<br />
+          Example:
         </p>
-        Example:
         <p>
           The following while loop iterates as long as n is less than three:
         </p>
+
         <code>var n = 0; var x = 0; while (n < 3) { n++; x +=n; }</code>
         <p>
           With each iteration, the loop increments n and adds that value to x.
@@ -429,5 +436,6 @@
         </ul>
       </section>
     </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
