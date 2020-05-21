@@ -27,9 +27,6 @@
   #hamburger {
     display: block;
   }
-  .input:checked ~ #nav-bar ul {
-    margin-left: 1px;
-  }
   #main-doc {
     margin: 50px auto;
     width: 100%;
