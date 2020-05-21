@@ -1,3 +1,25 @@
+// -------------- Side-bar toggle function created ----------------------------
+let hamburger = document.getElementById('hamburger');
+let sideBar = document.getElementById('sideBar');
+let close = document.getElementById('close');
+
+function bar_show() {
+    console.log('toggle');
+    sideBar.style.marginLeft = '0';
+    hamburger.style.cssText = 'display:none;top:0;';
+    close.style.display = 'block';
+}
+
+function bar_hide() {
+    sideBar.style.marginLeft = '-120px';
+    close.style.display= 'none';
+    hamburger.style.display = 'block'
+}
+
+hamburger.addEventListener('click', bar_show);
+close.addEventListener('click', bar_hide);
+
+
 // -------------- HEADER AND NAVIGATION DISPLAY NONE WHEN SCROLL DOWN ----------------------------
 let initial_scroll_position = window.pageYOffset;
 window.onscroll = function () {
