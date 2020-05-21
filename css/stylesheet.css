@@ -40,8 +40,7 @@ html {
 }
 #nav-bar header h1 {
   display: inline-block;
-  margin: 10px 19px 0 0;
-  padding: 0.7em 0.8em;
+  padding: 0.65em 0.8em;
   background-color: #010101a5;
   color: #fff;
   border-radius: 10px 0 0 10px;
@@ -55,6 +54,7 @@ html {
   top: 5.4em;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
+  padding: 1px 0.2px;
 }
 .line_hamburger {
   display: block;
@@ -73,7 +73,7 @@ html {
   background-color: #fff;
   border-radius: 0 10px 10px 0;
   padding-right: 0.6em;
-  max-height: calc(100vh - 9rem);
+  max-height: calc(100vh - 8.5rem);
   overflow-y: auto;
   scrollbar-color: red;
   /* sss */
@@ -88,7 +88,6 @@ html {
   text-decoration: none;
   color: #323232;
   padding: 1.2rem 0 1.2rem 1.5rem;
-
   font-size: 16px;
   /* transition: ease 3s; */
 }
@@ -98,15 +97,10 @@ html {
   width: 100%;
   position: relative;
   top: 10px;
-  /* top: 1px; */
-  /* height: 1px; */
   background-color: #383939;
 }
 .nav-link:hover {
   padding-left: 1.2em;
-  /* border: 1px solid #010101; */
-  /* border-bottom: 1px solid #010101; */
-  /* border-radius: 5px; */
 }
 .nav-link:hover:after {
   height: 2px;
