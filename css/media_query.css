@@ -5,7 +5,7 @@
     cursor: pointer;
   }
   #nav-bar header h1:hover {
-    margin-right: 19px;
+    margin-right: 10px;
   }
 }
 @media screen and (max-width: 950px) {
