@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1400px)"
+      href="css/media_query.css"
+    />
     <title>Technical page</title>
   </head>
   <body>
     <nav id="nav-bar">
       <header><h1>JS Documentation</h1></header>
+      <div id="hamburger">
+        <span class="line_hamburger"></span>
+        <span class="line_hamburger"></span>
+        <span class="line_hamburger"></span>
+      </div>
+      <!-- <img
+        id="menu-btn"
+        src="assets/menu-24px.svg"
+        alt="icon menu of the side bar"
+      /> -->
       <ul>
         <li>
           <a href="#Introduction" class="nav-link current">Introduction </a>
@@ -226,7 +241,7 @@
         <code
           >if (true) {<br />
           let y = 5; }<br />
-          console.log(y); // ReferenceError: y is not defined</code
+          console.log(y); <br />// ReferenceError: y is not defined</code
         >
       </section>
       <section class="main-section" id="Global_variables">
@@ -270,9 +285,11 @@
           variable in the same scope. For example:
         </p>
         <code
-          >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-          WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-          //statements }</code
+          >// THIS WILL CAUSE AN ERROR <br />
+          function f() {};<br />
+          const f = 5; // THIS WILL CAUSE AN ERROR<br />
+          ALSO function <br />
+          f() { const g = 5; var g; //statements }</code
         >
         <p>
           However, object attributes are not protected, so the following
