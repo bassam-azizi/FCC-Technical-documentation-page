@@ -37,6 +37,7 @@ html {
   text-align: right;
   color: slategrey;
   letter-spacing: 0.1;
+  transition: all ease-in-out 1s;
 }
 #nav-bar header h1 {
   display: inline-block;
@@ -55,6 +56,7 @@ html {
   border-radius: 0 10px 10px 0;
   cursor: pointer;
   padding: 1px 0.2px;
+  transition: all ease-in-out 1s;
 }
 .line_hamburger {
   display: block;
@@ -62,6 +64,21 @@ html {
   height: 3px;
   background-color: #fff;
 }
+/* #hamburger label {
+  z-index: 2;
+  position: absolute;
+  /* top: 0; */
+/* left: 150px; */
+/* background-color: blue; */
+
+.hamburger_radio {
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* z-index: -2; */
+  display: none;
+}
+
 #nav-bar ul {
   /* height: 100%; */
   overflow-y: scroll;
@@ -69,13 +86,14 @@ html {
   width: 100%;
   height: auto;
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 50px;
   background-color: #fff;
   border-radius: 0 10px 10px 0;
   padding-right: 0.6em;
   max-height: calc(100vh - 8.5rem);
   overflow-y: auto;
-  scrollbar-color: red;
+  scrollbar-width: none;
+  /* scrollbar-color: red; */
   /* sss */
 }
 #nav-bar ul li {
