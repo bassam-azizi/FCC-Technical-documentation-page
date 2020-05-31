@@ -52,10 +52,10 @@ html {
   background-color: #010101a5;
   width: 2.8em;
   position: absolute;
-  top: 5.4em;
-  border-radius: 0 10px 10px 0;
+  /* top: 5.4em; */
+  border-radius: 50%;
   cursor: pointer;
-  padding: 1px 0.2px;
+  padding: 1px 0.8px;
   transition: all ease-in-out 1s;
 }
 .line_hamburger {
@@ -67,13 +67,15 @@ html {
 #close {
   display: none;
   position: absolute;
-  top: 5px;
+  top: 0;
   width: 1.4em;
   text-align: center;
+  font-family: Tahoma;
   font-size: 28px;
+  font-weight: 100;
   color: white;
   background-color: #010101a5;
-  border-radius: 0 10px 10px 0;
+  border-radius: 50%;
   cursor: pointer;
   padding: 7px 5px;
   transition: all ease 1s;
@@ -138,6 +140,9 @@ html {
   min-height: 70vh;
   width: 70%;
 }
+#Introduction {
+  display: block;
+}
 .main-section {
   display: none;
   width: 80%;
@@ -151,6 +156,9 @@ html {
 .main-section:target {
   display: block;
 }
+/* .main-section:target ~ #Introduction { */
+/* display: none;
+} */
 /* ******************** Styling the content of the main section ******************** */
 
 .main-section header {
@@ -165,9 +173,9 @@ html {
 }
 .main-section p,
 .main-section li {
-  text-indent: 4px;
+  text-indent: 14px;
   line-height: 30px;
-  padding: 1.5em 1.5em 1.5em 0;
+  padding: 0.5em 1.5em 0.5em 0;
   color: #383939;
   /* max-width: 700px; */
   margin: 0 auto;
@@ -176,13 +184,13 @@ html {
   margin-left: 4em;
 }
 .main-section ul li {
-  padding: 1em 1em 1em 0.4em;
+  padding: 0.5em 1em 0.2em 0.4em;
   list-style: lower-roman;
 }
 code {
   display: block;
   background-color: #f7f7f7;
-  padding: 15px;
+  padding: 1px 15px;
   margin: 10px auto;
   border-radius: 5px;
   line-height: 30px;
