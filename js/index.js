@@ -12,7 +12,7 @@ function bar_show() {
 
 function bar_hide() {
     sideBar.style.marginLeft = '-120px';
-    close.style.display= 'none';
+    close.style.display = 'none';
     hamburger.style.display = 'block'
 }
 
@@ -36,9 +36,11 @@ window.onscroll = function () {
 // ------------- NAV BAR ITEMS 'S CURRENT SELECTIONS --------------------
 let nav_link_node = document.getElementsByClassName('nav-link');
 let nav_links = Array.from(nav_link_node);
+let introduction = document.getElementById('Introduction');
 
 nav_links.forEach(nav_link => {
     nav_link.addEventListener('click', function () {
+        if (nav_link.innerHTML !== 'Introduction') { console.log(nav_link.innerHTML); introduction.style.display = "none"; }
         nav_links.forEach(nav_link => nav_link.classList.remove('current'));
         nav_link.classList.add('current');
     })
