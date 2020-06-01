@@ -93,7 +93,7 @@ html {
   padding-right: 0.6em;
   max-height: calc(100vh - 8.5rem);
   overflow-y: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
   transition: margin ease 1.52s;
 }
 #nav-bar ul li {
@@ -140,9 +140,9 @@ html {
   min-height: 70vh;
   width: 70%;
 }
-#Introduction {
+/* #Introduction {
   display: block;
-}
+} */
 .main-section {
   display: none;
   width: 80%;
