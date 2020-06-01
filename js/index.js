@@ -1,4 +1,4 @@
-// -------------- Side-bar toggle function created ----------------------------
+// -------------- Side-bar toggle function created || On the small screen sized || ----------------------------
 let hamburger = document.getElementById('hamburger');
 let sideBar = document.getElementById('sideBar');
 let close = document.getElementById('close');
@@ -33,59 +33,44 @@ window.onscroll = function () {
     }
 }
 
-// ------------- NAV BAR ITEMS 'S CURRENT SELECTIONS --------------------
+// *******------------- NAV BAR ITEMS 'S CURRENT SELECTIONS and the highlight --------------------**********
+
 let nav_link_node = document.getElementsByClassName('nav-link');
 let nav_links = Array.from(nav_link_node);
 
 let introduction = document.getElementById('Introduction');
-// let main_sectionHT = document.getElementsByTagName('section');
-// let main_sections = Array.from(main_sectionHT);
 
-// for (i = 1; i < nav_links.length; i++) {
-//     if (!nav_links[i].classList.contains('current')) {
-//         nav_links[0].classList.add('current');
-//         console.log('brick does not contain ');
-//     }
-//     else {
-//         nav_links[0].classList.remove('current');
-//     }
-// }
-// nav_links[0].classList.add('current');
-// if (nav_links[0].classList.contains('current')) {
-//     introduction.style.display = "block";
-// }
-// else {
-//     introduction.style.display = 'none';
-// }
 
 // ---------------------     ---------------------------------------
-// function current(e) {
-//     e.target.classList.add('current');
-//     console.log(e.target);
-// }
 
-// sideBar.addEventListener('click', current);
+// <<<<<<<<<<<<<< document when loaded, the introduction section will be the default in the display >>>>>>>>>>>>>>>>>>>>>>
+function home_content() {
+    if (document.location.hash === "") {
+        document.location.hash = "Introduction";
+    }
+}
+
+window.onloadstart = home_content();
+
+// <<<<<<<<<<<<<<< <hzn document is refreshed, the highlighted link and it's section will be the sole in the display >>>>>>>>>>>
 nav_links.forEach(nav_link => {
-    nav_link.addEventListener('click', function () {
-        // window.addEventListener('hashchange', e => {
-        //     if (window.location.href.split('#')[1] === nav_link.innerHTML) {
-        //         nav_link.classList.add('current');
-        //         console.log('this done');
-        //     } else {
-        //         nav_link.classList.remove('current');
-        //     }
-        // });
+    window.addEventListener('load', e => {
+        if (window.location.href.split('#')[1] === nav_link.innerHTML) {
+            nav_links.forEach(navlink => navlink.classList.remove('current'));
+            nav_link.classList.add('current');
+            console.log('this done');
+        }
 
-        // if (nav_link.innerHTML == 'Introduction') {
-        //     introduction.style.display = "block";
-        // }
-        // else {
-        //     introduction.style.display = "none";
-        // }
-        // nav_links.forEach(nav_link => nav_link.classList.remove('current'));
-        // nav_link.classList.add('current');
-        console.log(nav_link.innerHTML);
-        window.addEventListener('hashchange', e => { console.log(window.location.href.split('#')[1]) });
-        // console.log(hash());
+    })
+    // <<<<<<<< When other link is clicked, it will be the only highlighted on the display >>>>>>>>>>>>>>>
+    nav_link.addEventListener('click', function () {
+        window.addEventListener('hashchange', e => {
+            if (window.location.href.split('#')[1] === nav_link.innerHTML) {
+                nav_links.forEach(navlink => navlink.classList.remove('current'));
+                nav_link.classList.add('current');
+                console.log('this done');
+            }
+            // 
+        })
     })
 })
