@@ -171,6 +171,13 @@ html {
   /* padding: 1.2em; */
   color: #010101;
 }
+.iconify {
+  float: right;
+  cursor: pointer;
+  color: #4f4f4f91;
+  position: relative;
+  padding: 4px;
+}
 .main-section p,
 .main-section li {
   text-indent: 14px;
