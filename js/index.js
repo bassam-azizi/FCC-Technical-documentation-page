@@ -52,13 +52,12 @@ function home_content() {
 
 window.onloadstart = home_content();
 
-// <<<<<<<<<<<<<<< <hzn document is refreshed, the highlighted link and it's section will be the sole in the display >>>>>>>>>>>
+// <<<<<<<<<<<<<<< <When document is refreshed, the highlighted link and it's section will be the sole in the display >>>>>>>>>>>
 nav_links.forEach(nav_link => {
     window.addEventListener('load', e => {
         if (window.location.href.split('#')[1] === nav_link.innerHTML) {
             nav_links.forEach(navlink => navlink.classList.remove('current'));
             nav_link.classList.add('current');
-            console.log('this done');
         }
 
     })
@@ -68,9 +67,38 @@ nav_links.forEach(nav_link => {
             if (window.location.href.split('#')[1] === nav_link.innerHTML) {
                 nav_links.forEach(navlink => navlink.classList.remove('current'));
                 nav_link.classList.add('current');
-                console.log('this done');
             }
             // 
         })
     })
 })
+
+
+// <<<<<<<<<<<<< The full screen functionality  >>>>>>>>>>>>>>>>>>>>>
+let iconifies_htC = document.querySelectorAll('.iconify');
+let iconifies = Array.from(iconifies_htC);
+// console.log(iconifies);
+
+let title = document.getElementById('title');
+let main_doc = document.getElementById('main-doc');
+let mainSectionHC = document.querySelectorAll('.main-section');
+let main_section = Array.from(mainSectionHC);
+
+let fullscreen = false;
+function toggle_fullscreen() {
+    console.log('full screen function');
+    if (!fullscreen) {
+        sideBar.style.display = "none";
+        title.style.display = "none";
+        main_doc.style.cssText = 'width:100%; margin:1em 0 0';
+        hamburger.style.display = 'none';
+        fullscreen = true;
+    }
+    else {
+        sideBar.style.display = "block";
+        title.style.display = "block";
+        // if (window.screen.availWidth >= '750px') { main_doc.style.cssText = 'width:70%; margin:50px 4% 0 15rem' };
+        // if (window.screen.availWidth <= '750px') { hamburger.style.display = 'block' };
+        fullscreen = false;
+    }
+}
