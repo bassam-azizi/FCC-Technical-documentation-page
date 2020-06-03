@@ -1,13 +1,4 @@
-@media screen and (max-width: 1341px) {
-  #navbar header h1 {
-    margin-right: -182px;
-    transition: all ease 0.7s;
-    cursor: pointer;
-  }
-  #navbar header h1:hover {
-    margin-right: 10px;
-  }
-}
+
 @media screen and (max-width: 950px) {
   #navbar {
     left: 0;

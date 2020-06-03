@@ -41,7 +41,6 @@ window.onscroll = function () {
 let nav_link_node = document.getElementsByClassName('nav-link');
 let nav_links = Array.from(nav_link_node);
 
-let introduction = document.getElementById('Introduction');
 
 
 // ---------------------     ---------------------------------------
