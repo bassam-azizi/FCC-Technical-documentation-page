@@ -27,23 +27,21 @@ html {
 }
 
 #navbar header {
-  left: 0;
-  right: 0;
+  left: 1em;
   position: absolute;
-  top: 2;
   left: 0;
   width: 100vw;
-  text-align: right;
-  color: slategrey;
-  letter-spacing: 0.1;
+  letter-spacing: 0.1em;
   transition: all ease-in-out 1s;
 }
 #navbar header h1 {
+  margin-top: 10px;
   display: inline-block;
-  padding: 0.65em 0.8em;
-  background-color: #010101a5;
-  color: #fff;
-  border-radius: 10px 0 0 10px;
+  padding: 0.2em 0.3em;
+  text-shadow: 8px 7px 17px #fff;
+  color: #2f2f2e;
+  border-bottom: 1px solid #000;
+  font-weight: 500;
 }
 
 #hamburger {
@@ -87,11 +85,12 @@ html {
   overflow: hidden;
   margin-top: 50px;
   background-color: #fff;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0;
   padding-right: 0.6em;
-  max-height: calc(100vh - 8.5rem);
+  max-height: calc(100vh - 10rem);
   overflow-y: auto;
   scrollbar-width: thin;
+  margin-top: 5rem;
   transition: margin ease 1.52s;
 }
 #navbar ul li {
@@ -124,7 +123,7 @@ html {
 .current {
   color: #fff1ff;
   cursor: default;
-  background-color: #010101e5;
+  background-color: #010101e2;
   color: #fff;
   border: 1px solid #4f4f4f91;
   border-radius: 1px;
@@ -132,7 +131,7 @@ html {
 
 /* **************** MAIN DOC SECTION *********************** */
 #main-doc {
-  margin: 50px 4% 0 15rem;
+  margin: 2.5rem 4% 0 15rem;
   height: auto;
   min-height: 70vh;
   width: 70%;
@@ -142,7 +141,7 @@ html {
   width: 80%;
   margin: 0 auto;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 2px;
   min-height: 70vh;
   padding: 3rem;
 }
@@ -153,10 +152,10 @@ html {
 /* ******************** Styling the content of the main section ******************** */
 
 .main-section header {
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: 0.01em;
   font-size: 28px;
-  margin: 0 0 15px;
+  margin: 0 0 35px;
   text-align: center;
   color: #010101;
 }
