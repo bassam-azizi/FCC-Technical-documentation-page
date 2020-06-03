@@ -2,18 +2,21 @@
 let hamburger = document.getElementById('hamburger');
 let sideBar = document.getElementById('sideBar');
 let close = document.getElementById('close');
+let nav_bar = document.getElementById('nav-bar');
 
 function bar_show() {
     console.log('toggle');
     sideBar.style.marginLeft = '0';
     hamburger.style.cssText = 'display:none;top:0;';
     close.style.display = 'block';
+    nav_bar.style.cssText = 'background-color: #01010177; width: 100%;'
 }
 
 function bar_hide() {
-    sideBar.style.marginLeft = '-120px';
+    sideBar.style.marginLeft = '-280px';
     close.style.display = 'none';
     hamburger.style.display = 'block'
+    nav_bar.style.cssText = 'background-color: ""; "";'
 }
 
 hamburger.addEventListener('click', bar_show);
