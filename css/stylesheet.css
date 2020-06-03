@@ -15,7 +15,6 @@ html {
     rgba(233, 236, 244, 1) 86%,
     rgba(233, 236, 244, 1) 100%
   );
-  /* position: relative; */
 }
 
 #navbar {
@@ -52,7 +51,6 @@ html {
   background-color: #010101a5;
   width: 2.8em;
   position: absolute;
-  /* top: 5.4em; */
   border-radius: 50%;
   cursor: pointer;
   padding: 1px 0.8px;
@@ -107,7 +105,6 @@ html {
   color: #323232;
   padding: 1.2rem 0 1.2rem 1.5rem;
   font-size: 16px;
-  /* transition: ease 3s; */
 }
 .nav-link::after {
   content: "";
@@ -140,15 +137,11 @@ html {
   min-height: 70vh;
   width: 70%;
 }
-/* #Introduction {
-  display: block;
-} */
 .main-section {
   display: none;
   width: 80%;
   margin: 0 auto;
   background-color: #fff;
-  /* border: 3px solid #010101d6; */
   border-radius: 10px;
   min-height: 70vh;
   padding: 3rem;
@@ -156,28 +149,28 @@ html {
 .main-section:target {
   display: block;
 }
-/* .main-section:target ~ #Introduction { */
-/* display: none;
-} */
+
 /* ******************** Styling the content of the main section ******************** */
 
 .main-section header {
   font-weight: 600;
   letter-spacing: 0.01em;
   font-size: 28px;
-  /* width: 600px; */
   margin: 0 0 15px;
   text-align: center;
-  /* padding: 1.2em; */
   color: #010101;
 }
 .iconify {
   float: right;
   cursor: pointer;
-  color: #4f4f4f91;
+  color: #3839394a;
   position: relative;
   padding: 4px;
   z-index: 0;
+}
+.iconify:hover {
+  color: rgb(201, 211, 240);
+  font-size: 1em;
 }
 .main-section p,
 .main-section li {
@@ -185,7 +178,6 @@ html {
   line-height: 30px;
   padding: 0.5em 1.5em 0.5em 0;
   color: #383939;
-  /* max-width: 700px; */
   margin: 0 auto;
 }
 .main-section ul {
