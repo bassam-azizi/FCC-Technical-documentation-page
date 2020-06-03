@@ -18,7 +18,7 @@ html {
   /* position: relative; */
 }
 
-#nav-bar {
+#navbar {
   position: fixed;
   top: 0;
   left: 10px;
@@ -27,7 +27,7 @@ html {
   height: 100%;
 }
 
-#nav-bar header {
+#navbar header {
   left: 0;
   right: 0;
   position: absolute;
@@ -39,7 +39,7 @@ html {
   letter-spacing: 0.1;
   transition: all ease-in-out 1s;
 }
-#nav-bar header h1 {
+#navbar header h1 {
   display: inline-block;
   padding: 0.65em 0.8em;
   background-color: #010101a5;
@@ -81,7 +81,7 @@ html {
   transition: all ease 1s;
 }
 
-#nav-bar ul {
+#navbar ul {
   overflow-y: scroll;
   list-style: none;
   width: 100%;
@@ -96,7 +96,7 @@ html {
   scrollbar-width: thin;
   transition: margin ease 1.52s;
 }
-#nav-bar ul li {
+#navbar ul li {
   width: 100%;
   cursor: pointer;
 }

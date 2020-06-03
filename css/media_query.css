@@ -1,18 +1,18 @@
 @media screen and (max-width: 1341px) {
-  #nav-bar header h1 {
+  #navbar header h1 {
     margin-right: -182px;
     transition: all ease 0.7s;
     cursor: pointer;
   }
-  #nav-bar header h1:hover {
+  #navbar header h1:hover {
     margin-right: 10px;
   }
 }
 @media screen and (max-width: 950px) {
-  #nav-bar {
+  #navbar {
     left: 0;
   }
-  #nav-bar header h1 {
+  #navbar header h1 {
     margin-right: -193px;
   }
   #main-doc {
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  #nav-bar ul {
+  #navbar ul {
     margin-left: -280px;
     width: 210px;
   }

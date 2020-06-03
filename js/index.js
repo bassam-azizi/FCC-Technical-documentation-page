@@ -2,7 +2,7 @@
 let hamburger = document.getElementById('hamburger');
 let sideBar = document.getElementById('sideBar');
 let close = document.getElementById('close');
-let nav_bar = document.getElementById('nav-bar');
+let nav_bar = document.getElementById('navbar');
 
 function bar_show() {
     console.log('toggle');
@@ -16,7 +16,7 @@ function bar_hide() {
     sideBar.style.marginLeft = '-280px';
     close.style.display = 'none';
     hamburger.style.display = 'block'
-    nav_bar.style.cssText = 'background-color: ""; "";'
+    nav_bar.style.cssText = 'background-color: ""; width:"";'
 }
 
 hamburger.addEventListener('click', bar_show);
