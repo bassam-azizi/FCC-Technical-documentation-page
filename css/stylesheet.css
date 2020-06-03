@@ -177,6 +177,7 @@ html {
   color: #4f4f4f91;
   position: relative;
   padding: 4px;
+  z-index: 0;
 }
 .main-section p,
 .main-section li {
