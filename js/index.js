@@ -57,7 +57,7 @@ window.onloadstart = home_content();
 // <<<<<<<<<<<<<<< <When document is refreshed, the highlighted link and it's section will be the sole in the display >>>>>>>>>>>
 nav_links.forEach(nav_link => {
     window.addEventListener('load', e => {
-        if (window.location.href.split('#')[1] === nav_link.innerHTML) {
+        if (window.location.href.split('#')[1] === nav_link.href.split('#')[1]) {
             nav_links.forEach(navlink => navlink.classList.remove('current'));
             nav_link.classList.add('current');
         }
@@ -66,7 +66,7 @@ nav_links.forEach(nav_link => {
     // <<<<<<<< When other link is clicked, it will be the only highlighted on the display >>>>>>>>>>>>>>>
     nav_link.addEventListener('click', function () {
         window.addEventListener('hashchange', e => {
-            if (window.location.href.split('#')[1] === nav_link.innerHTML) {
+            if (window.location.href.split('#')[1] === nav_link.href.split('#')[1]) {
                 nav_links.forEach(navlink => navlink.classList.remove('current'));
                 nav_link.classList.add('current');
             }
